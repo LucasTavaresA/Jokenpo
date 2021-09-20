@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+button {
+    border: 0.1px solid white;
+    background-color: black;
+    color: white;
+}
+  button:hover{
+    background-color: rgb(70, 70, 70);
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+a,
+a:link,
+a:visited,
+a:active {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+}
