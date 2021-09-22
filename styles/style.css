@@ -5,13 +5,19 @@ body {
     color: white;
     text-align: center;
 }
+.buttons {
+    display: grid;
+    justify-content: space-evenly;
+    margin: 0 250px;
+    grid-auto-flow: column;
+}
 button {
     border: 0.1px solid white;
     background-color: black;
     color: white;
     scale: 1.5;
 }
-  button:hover{
+button:hover{
     background-color: rgb(70, 70, 70);
 }
 footer {
@@ -37,5 +43,6 @@ a:hover {
     button {
         scale: 3;
         border: 1px solid white;
+        margin: 0 100px;
     }
   }

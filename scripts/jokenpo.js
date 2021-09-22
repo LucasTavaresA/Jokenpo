@@ -2,58 +2,68 @@ function rodadaBot() {
   let escolha = Math.floor(Math.random() * 3) + 1; 
   switch(escolha){
     case 1:
-      escolha = "pedra";
-    break;
+      return "pedra";
     case 2:
-      escolha = "papel";
-    break;
+      return "papel";
     case 3:
-      escolha = "tesoura";
-    break;
+      return "tesoura";
   }
-  return escolha;
 }
 
-function jogar() {
-  let jogada = prompt('').toString().toLowerCase();
-  let bot = rodadaBot();
+function partida(bot, jogada) {
   if(jogada == "pedra"){
     if (jogada == bot) {
-      alert("Empate!");
+      document.getElementById("result").innerHTML = "Empate!";
     }
     else {
       if (jogada == "pedra" && bot == "papel"){
-        alert("O Computador Escolheu Papel, Você Perdeu!");
+        document.getElementById("result").innerHTML = "O Computador Escolheu Papel, Você Perdeu!";
       } else {
-        alert("O Computador Escolheu Tesoura, Você Ganhou!");
+        document.getElementById("result").innerHTML = "O Computador Escolheu Tesoura, Você Ganhou!";
       }
     }
   }
   else if(jogada == "papel"){
     if (jogada == bot) {
-      alert("Empate!");
+      document.getElementById("result").innerHTML = "Empate!";  
     }
     else {
-      if (jogada == "papel" && bot == "tesoura"){
-        alert("O Computador Escolheu Tesoura, Você Perdeu!");
-      } else {
-        alert("O Computador Escolheu Pedra, Você Ganhou!");
+      if (jogada == "papel" && bot == "tesoura"){ 
+        document.getElementById("result").innerHTML = "O Computador Escolheu Tesoura, Você Perdeu!";
+      } else {  
+        document.getElementById("result").innerHTML = "O Computador Escolheu Pedra, Você Ganhou!";
       }
     }
   }
   else if(jogada == "tesoura"){
     if (jogada == bot) {
-      alert("Empate!");
+      document.getElementById("result").innerHTML = "Empate!";    
     }
     else {
       if (jogada == "tesoura" && bot == "pedra"){
-        alert("O Computador Escolheu Pedra, Você Perdeu!");
+        document.getElementById("result").innerHTML = "O Computador Escolheu Pedra, Você Perdeu!";
       } else {
-        alert("O Computador Escolheu Papel, Você Ganhou!");
+        document.getElementById("result").innerHTML = "O Computador Escolheu Papel, Você Ganhou!";
       }
     }
   }
   else {
-    alert("Comando invalido! Tente novamente");
+    document.getElementById("result").innerHTML = "Comando invalido! Tente novamente";
   }
+}
+
+function pedra() {
+  let bot = rodadaBot();
+  let jogada = "pedra";
+  partida(bot, jogada);
+}
+function papel() {
+  let bot = rodadaBot();
+  let jogada = "papel";
+  partida(bot, jogada);
+}
+function tesoura() {
+  let bot = rodadaBot();
+  let jogada = "tesoura";
+  partida(bot, jogada);
 }
