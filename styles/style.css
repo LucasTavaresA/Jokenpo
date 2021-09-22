@@ -1,6 +1,7 @@
 body {
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: black;
+    font-size: large;
     color: white;
     text-align: center;
 }
@@ -8,6 +9,7 @@ button {
     border: 0.1px solid white;
     background-color: black;
     color: white;
+    scale: 1.5;
 }
   button:hover{
     background-color: rgb(70, 70, 70);
@@ -28,3 +30,12 @@ a:active {
 a:hover {
     text-decoration: none;
 }
+@media (max-device-width: 600px) {
+    body {
+        font-size: xx-large;
+    }
+    button {
+        scale: 3;
+        border: 1px solid white;
+    }
+  }
