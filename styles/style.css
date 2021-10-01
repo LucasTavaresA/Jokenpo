@@ -6,8 +6,9 @@ body {
     text-align: center;
 }
 button {
-    border: 1px solid white;
+    border: 0.1rem solid white;
     background-color: black;
+    border-radius: 5px;
     color: white;
     padding: 5px 10px;
     margin: 10px;
@@ -37,5 +38,6 @@ a:hover {
     }
     button {
         font-size: 100%;
+        border: 0.2rem solid white;
     }
   }

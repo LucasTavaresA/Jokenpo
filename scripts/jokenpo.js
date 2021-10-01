@@ -1,3 +1,6 @@
+let computerWins = 0;
+let playerWins = 0;
+
 function rodadaBot() {
   let escolha = Math.floor(Math.random() * 3) + 1; 
   switch(escolha){
@@ -13,42 +16,70 @@ function rodadaBot() {
 function partida(bot, jogada) {
   if(jogada == "pedra"){
     if (jogada == bot) {
-      document.getElementById("result").innerHTML = "Empate!";
+      document.getElementById("result").style.color = "Transparent";
+      document.getElementById("play").innerHTML = "Empate!";
     }
     else {
       if (jogada == "pedra" && bot == "papel"){
-        document.getElementById("result").innerHTML = "O Computador Escolheu Papel, Você Perdeu!";
+        document.getElementById("play").innerHTML = "O Computador Escolheu Papel";
+        document.getElementById("result").style.color = "Red";
+        document.getElementById("result").innerHTML = "Você Perdeu!";
+        computerWins++;
+        document.getElementById("derrotas").innerHTML = computerWins + " Derrotas";
       } else {
-        document.getElementById("result").innerHTML = "O Computador Escolheu Tesoura, Você Ganhou!";
+        document.getElementById("play").innerHTML = "O Computador Escolheu Tesoura";
+        document.getElementById("result").style.color = "green";
+        document.getElementById("result").innerHTML = "Você Ganhou!";
+        playerWins++;
+        document.getElementById("vitorias").innerHTML = playerWins + " Vitórias";
       }
     }
   }
   else if(jogada == "papel"){
     if (jogada == bot) {
-      document.getElementById("result").innerHTML = "Empate!";  
+      document.getElementById("result").style.color = "Transparent"; 
+      document.getElementById("play").innerHTML = "Empate!"; 
     }
     else {
       if (jogada == "papel" && bot == "tesoura"){ 
-        document.getElementById("result").innerHTML = "O Computador Escolheu Tesoura, Você Perdeu!";
+        document.getElementById("play").innerHTML = "O Computador Escolheu Tesoura";
+        document.getElementById("result").style.color = "Red";
+        document.getElementById("result").innerHTML = "Você Perdeu!";
+        computerWins++;
+        document.getElementById("derrotas").innerHTML = computerWins + " Derrotas";
       } else {  
-        document.getElementById("result").innerHTML = "O Computador Escolheu Pedra, Você Ganhou!";
+        document.getElementById("play").innerHTML = "O Computador Escolheu Pedra";
+        document.getElementById("result").style.color = "green";
+        document.getElementById("result").innerHTML = "Você Ganhou!";
+        playerWins++;
+        document.getElementById("vitorias").innerHTML = playerWins + " Vitórias";
       }
     }
   }
   else if(jogada == "tesoura"){
     if (jogada == bot) {
-      document.getElementById("result").innerHTML = "Empate!";    
+      document.getElementById("result").style.color = "Transparent";
+      document.getElementById("play").innerHTML = "Empate!";    
     }
     else {
       if (jogada == "tesoura" && bot == "pedra"){
-        document.getElementById("result").innerHTML = "O Computador Escolheu Pedra, Você Perdeu!";
+        document.getElementById("play").innerHTML = "O Computador Escolheu Pedra";
+        document.getElementById("result").style.color = "Red";
+        document.getElementById("result").innerHTML = "Você Perdeu!";
+        computerWins++;
+        document.getElementById("derrotas").innerHTML = computerWins + " Derrotas";
       } else {
-        document.getElementById("result").innerHTML = "O Computador Escolheu Papel, Você Ganhou!";
+        document.getElementById("play").innerHTML = "O Computador Escolheu Papel";
+        document.getElementById("result").style.color = "green";
+        document.getElementById("result").innerHTML = "Você Ganhou!";
+        playerWins++;
+        document.getElementById("vitorias").innerHTML = playerWins + " Vitórias";
       }
     }
   }
   else {
-    document.getElementById("result").innerHTML = "Comando invalido! Tente novamente";
+    document.getElementById("result").style.color = "Transparent";
+    document.getElementById("play").innerHTML = "Comando invalido! Tente novamente";
   }
 }
 
