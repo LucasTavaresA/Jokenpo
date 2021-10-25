@@ -23,13 +23,13 @@ function partida(bot, jogada) {
       if (jogada == "pedra" && bot == "papel"){
         document.getElementById("play").innerHTML = "O Computador Escolheu Papel";
         document.getElementById("result").style.color = "Red";
-        document.getElementById("result").innerHTML = "Você Perdeu!";
+        document.getElementById("result").innerHTML = "Voce Perdeu!";
         computerWins++;
         document.getElementById("derrotas").innerHTML = computerWins + " Derrotas";
       } else {
         document.getElementById("play").innerHTML = "O Computador Escolheu Tesoura";
         document.getElementById("result").style.color = "green";
-        document.getElementById("result").innerHTML = "Você Ganhou!";
+        document.getElementById("result").innerHTML = "Voce Ganhou!";
         playerWins++;
         document.getElementById("vitorias").innerHTML = playerWins + " Vitórias";
       }
@@ -44,13 +44,13 @@ function partida(bot, jogada) {
       if (jogada == "papel" && bot == "tesoura"){ 
         document.getElementById("play").innerHTML = "O Computador Escolheu Tesoura";
         document.getElementById("result").style.color = "Red";
-        document.getElementById("result").innerHTML = "Você Perdeu!";
+        document.getElementById("result").innerHTML = "Voce Perdeu!";
         computerWins++;
         document.getElementById("derrotas").innerHTML = computerWins + " Derrotas";
       } else {  
         document.getElementById("play").innerHTML = "O Computador Escolheu Pedra";
         document.getElementById("result").style.color = "green";
-        document.getElementById("result").innerHTML = "Você Ganhou!";
+        document.getElementById("result").innerHTML = "Voce Ganhou!";
         playerWins++;
         document.getElementById("vitorias").innerHTML = playerWins + " Vitórias";
       }
@@ -65,13 +65,13 @@ function partida(bot, jogada) {
       if (jogada == "tesoura" && bot == "pedra"){
         document.getElementById("play").innerHTML = "O Computador Escolheu Pedra";
         document.getElementById("result").style.color = "Red";
-        document.getElementById("result").innerHTML = "Você Perdeu!";
+        document.getElementById("result").innerHTML = "Voce Perdeu!";
         computerWins++;
         document.getElementById("derrotas").innerHTML = computerWins + " Derrotas";
       } else {
         document.getElementById("play").innerHTML = "O Computador Escolheu Papel";
         document.getElementById("result").style.color = "green";
-        document.getElementById("result").innerHTML = "Você Ganhou!";
+        document.getElementById("result").innerHTML = "Voce Ganhou!";
         playerWins++;
         document.getElementById("vitorias").innerHTML = playerWins + " Vitórias";
       }

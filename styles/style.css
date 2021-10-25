@@ -1,7 +1,9 @@
+@font-face { font-family: jogo; src: url('8bitin.ttf'); } 
+
 body {
-    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: jogo, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: black;
-    font-size: large;
+    font-size: 150%;
     color: white;
     text-align: center;
 }
@@ -34,7 +36,7 @@ a:hover {
 }
 @media (max-device-width: 600px) {
     body {
-        font-size: xx-large;
+        font-size: 180%;
     }
     button {
         font-size: 100%;
