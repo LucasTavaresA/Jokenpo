@@ -1,0 +1,55 @@
+@font-face {
+  font-family: jogo;
+  src: url("assets/8bitin.ttf");
+}
+
+body {
+  font-family: jogo, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+}
+
+button {
+  border: 0.1rem solid white;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media (max-device-width: 600px) {
+  body {
+    font-size: 240%;
+  }
+
+  button {
+    font-size: 100%;
+    border: 0.2rem solid white;
+  }
+}

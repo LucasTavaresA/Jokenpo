@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Jokenpô</title>
-    <script src="scripts/jokenpo.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="styles/icon.jpg">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assets/icon.jpg">
   </head>
   <body>
-    <h1>Jokenpô Usando JavaScript</h1>
+    <h1>Jokenpô</h1>
     <div class="buttons">
       <div></div>
-      <button onclick="pedra()"><img src="images/pedra.png"></button>
-      <button onclick="papel()"><img src="images/papel.png"></button>
-      <button onclick="tesoura()"><img src="images/tesoura.png"></button>
+      <button onclick="PlayTurn('pedra')"><img src="assets/pedra.png"></button>
+      <button onclick="PlayTurn('papel')"><img src="assets/papel.png"></button>
+      <button onclick="PlayTurn('tesoura')"><img src="assets/tesoura.png"></button>
       <div></div>
     </div>
     <p id="play"></p>
